@@ -4,3 +4,4 @@ package.json
 yarn.lock
 .eslintrc.js
 src/
+tsconfig.json

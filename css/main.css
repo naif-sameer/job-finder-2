@@ -74,3 +74,19 @@
   background-position: center center;
   background-size: cover;
 }
+
+.login {
+  min-height: 80vh;
+}
+
+a {
+  color: inherit;
+}
+
+.sidebar {
+  min-height: 100vh;
+}
+
+.bg-secondary {
+  background-color: #eee !important;
+}
