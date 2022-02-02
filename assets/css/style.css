@@ -1,9 +1,30 @@
+:root {
+  --bs-primary: #111827;
+  --bs-primary-rgb: 17, 24, 39;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hero img {
+  min-height: 100%;
+  max-height: 100%;
+}
+
+.find-job .card-img-top {
+  height: 200px;
+  object-fit: cover;
+  padding: 1rem;
+}
+
 .b-example-divider {
   height: 3rem;
   background-color: rgba(0, 0, 0, 0.1);
   border: solid rgba(0, 0, 0, 0.15);
   border-width: 1px 0;
-  box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1), inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+    inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
 }
 
 .bi {
@@ -89,4 +110,10 @@ a {
 
 .bg-secondary {
   background-color: #eee !important;
+}
+
+/* job page */
+
+.job-page .job-logo {
+  max-width: 50px;
 }
