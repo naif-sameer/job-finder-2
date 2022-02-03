@@ -132,3 +132,10 @@ a {
 .job-page .job-logo {
   max-width: 50px;
 }
+
+
+.user-avatar {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}

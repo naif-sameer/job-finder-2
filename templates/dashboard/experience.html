@@ -5,85 +5,132 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-      <!------------------- head style ------------------->
-      <link rel="stylesheet" href="/assets/css/solid.min.css" />
-      <link rel="stylesheet" href="/assets/css/fontawesome.min.css" />
-      <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
-      <link rel="stylesheet" href="/assets/css/style.css" />
-      <!------------------- head style ------------------->
+    <!------------------- head style ------------------->
+    <link rel="stylesheet" href="/assets/css/solid.min.css" />
+    <link rel="stylesheet" href="/assets/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <!------------------- head style ------------------->
   </head>
   <body>
-    <!-- user info -->
-    <div class="row">
-      <!-- left -->
-      <div class="sidebar col-12 col-md-3 bg-secondary text-white py-4 px-5">
-        <!-- links -->
+    <main class="container-lg mt-4">
+      <div class="row">
+        <!-- Dashboard Nav Section -->
+        <div class="col-lg-4 col-md-4 col-12 mb-3">
+          <div class="card shadow p-3 pt-0">
+            <!-- user avatar -->
+            <div
+              class="col-12 d-flex justify-content-center align-items-center p-4 position-relative"
+            >
+              <img
+                src="../../assets/images/avatar.jpg"
+                class="user-avatar img-fluid rounded-circle"
+                alt="user avatar"
+              />
+            </div>
 
-        <ul class="navbar-nav mt-4">
-          <li class="nav-item">
-            <a href="dashboard-info.html" class="nav-link">User info</a>
-          </li>
-          <li class="nav-item">
-            <a href="ex.html" class="nav-link">Experience</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Education</a>
-          </li>
-          <li class="nav-item">
-            <a href="courses.html" class="nav-link">Courses</a>
-          </li>
-        </ul>
+            <!-- name -->
+            <div class="text-center">
+              <a class="text-primary fs-4 fw-bold" href="">Ali Ahmed</a>
+              <p>Front end Developer</p>
+            </div>
+
+            <!-- dashboard nav -->
+            <nav class="card px-3 py-4 mt-3 d-flex gap-3">
+              <!-- info -->
+              <a
+                href="user-info.html"
+                class="text-secondary d-flex align-items-center d-inline-block ms-3 border-bottom pb-2"
+              >
+                <i class="fa fa-user pe-2"></i>
+                <span class="fs-6 fw-bold">Info</span>
+              </a>
+
+              <!-- skills -->
+              <a
+                href="skills.html"
+                class="text-secondary d-flex align-items-center d-inline-block ms-3 border-bottom pb-2"
+              >
+                <i class="fa fa-shekel-sign pe-2"></i>
+                <span class="fs-6 fw-bold">Skills</span>
+              </a>
+
+              <!-- experience -->
+              <a
+                href="experience.html"
+                class="text-primary d-flex align-items-center d-inline-block ms-3 border-bottom pb-2"
+              >
+                <i class="fa fa-object-group pe-2"></i>
+                <span class="fs-6 fw-bold">Experience</span>
+              </a>
+
+              <!-- education -->
+              <a
+                href="education.html"
+                class="text-secondary d-flex align-items-center d-inline-block ms-3 border-bottom pb-2"
+              >
+                <i class="fa fa-book pe-2"></i>
+                <span class="fs-6 fw-bold">Education</span>
+              </a>
+
+              <!-- Courses -->
+              <a
+                href="courses.html"
+                class="text-secondary d-flex align-items-center d-inline-block ms-3 border-bottom pb-2"
+              >
+                <i class="fa fa-paperclip pe-2"></i>
+                <span class="fs-6 fw-bold">Courses</span>
+              </a>
+            </nav>
+          </div>
+        </div>
+
+        <!-- Experience section -->
+        <section class="col-lg-8 col-md-8 col-12">
+          <div class="card p-3">
+            <header class="card-header bg-transparent">
+              <h3 class="fw-bold text-primary">Experience</h3>
+            </header>
+
+            <div class="card-body">
+              <div class="row">
+                <!-- experience 1 -->
+                <div class="col-12 mb-5">
+                  <div class="shadow-sm p-3">
+                    <a href="#"> <h4>Front end</h4> </a>
+
+                    <div class="text-black-50 fs-6 d-flex flex-column">
+                      <span>US</span>
+                      <span>From 2019 to 2021</span>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Itaque, velit!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- experience 2 -->
+                <div class="col-12 mb-5">
+                  <div class="shadow-sm p-3">
+                    <a href="#"> <h4>Back end</h4> </a>
+
+                    <div class="text-black-50 fs-6 d-flex flex-column">
+                      <span>Yemen</span>
+                      <span>2021 to 2024</span>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Itaque, velit!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-
-      <!-- user -->
-      <div class="col py-4 px-5">
-
-        <h2>Expericen list</h2>
-
-
-        <form action="" class="mt-3">
-          <div class="mb-3">
-            <label for="info-name-input" class="form-label">Languages</label>
-            <input
-              type="text"
-              class="form-control"
-              id="info-name-input"
-              placeholder="Your languages here :)"
-              value="English, Arabic"
-            />
-          </div>
-
-          <div class="mb-3">
-            <label for="info-email-input" class="form-label"> Hobbies </label>
-            <input
-              type="email"
-              class="form-control"
-              id="info-email-input"
-              placeholder="ex. talk to other people"
-            />
-          </div>
-
-          <div class="mb-3">
-            <label for="info-location-input" class="form-label">Ex years</label>
-            <input
-              type="text"
-              class="form-control"
-              id="info-location-input"
-              placeholder="ex. 2 years"
-            />
-          </div>
-
-          <div class="">
-            <button type="submit" class="btn btn-primary mb-3 px-5">
-              save
-            </button>
-          </div>
-        </form>
-      </div>
-    </div>
+    </main>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.js"></script>

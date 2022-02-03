@@ -5,131 +5,291 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-      <!------------------- head style ------------------->
-      <link rel="stylesheet" href="/assets/css/solid.min.css" />
-      <link rel="stylesheet" href="/assets/css/fontawesome.min.css" />
-      <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
-      <link rel="stylesheet" href="/assets/css/style.css" />
-      <!------------------- head style ------------------->
-  </head> 
+    <!------------------- head style ------------------->
+    <link rel="stylesheet" href="../../assets/css/solid.min.css" />
+    <link rel="stylesheet" href="../../assets/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <!------------------- head style ------------------->
+  </head>
   <body>
     <!-- user info -->
-    <div class="row">
-      <!-- left -->
-      <div class="sidebar col-12 col-md-3 bg-secondary text-white py-4 px-5">
-        <!-- links -->
+    <main class="container-lg mt-4">
+      <div class="row">
+        <!-- Dashboard Nav Section -->
+        <div class="col-lg-4 col-md-4 col-12 mb-3">
+          <div class="card shadow p-3 pt-0">
+            <!-- user avatar -->
+            <div
+              class="col-12 d-flex justify-content-center align-items-center p-4 position-relative"
+            >
+              <img
+                src="../../assets/images/avatar.jpg"
+                class="user-avatar img-fluid rounded-circle"
+                alt="user avatar"
+              />
+            </div>
 
-        <ul class="navbar-nav mt-4">
-          <li class="nav-item">
-            <a href="dashboard-info.html" class="nav-link">User info</a>
-          </li>
-          <li class="nav-item">
-            <a href="ex.html" class="nav-link">Experience</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Education</a>
-          </li>
-          <li class="nav-item">
-            <a href="courses.html" class="nav-link">Courses</a>
-          </li>
-        </ul>
-      </div>
+            <!-- name -->
+            <div class="text-center">
+              <a class="text-primary fs-4 fw-bold" href="">Ali Ahmed</a>
+              <p>Front end Developer</p>
+            </div>
 
-      <!-- user -->
-      <div class="col py-4 px-5">
+            <!-- dashboard nav -->
+            <nav class="card px-3 py-4 mt-3 d-flex gap-3">
+              <!-- info -->
+              <a
+                href="#"
+                class="text-primary d-flex align-items-center d-inline-block ms-3 border-bottom pb-2"
+              >
+                <i class="fa fa-user pe-2"></i>
+                <span class="fs-6 fw-bold">Info</span>
+              </a>
 
-        <h2>User info</h2>
+              <!-- skills -->
+              <a
+                href="skills.html"
+                class="text-secondary d-flex align-items-center d-inline-block ms-3 border-bottom pb-2"
+              >
+                <i class="fa fa-shekel-sign pe-2"></i>
+                <span class="fs-6 fw-bold">Skills</span>
+              </a>
 
+              <!-- experience -->
+              <a
+                href="experience.html"
+                class="text-secondary d-flex align-items-center d-inline-block ms-3 border-bottom pb-2"
+              >
+                <i class="fa fa-object-group pe-2"></i>
+                <span class="fs-6 fw-bold">Experience</span>
+              </a>
 
-        <!-- user image -->
-        <div class="d-flex text-primary align-items-center">
-          <img
-            class="rounded-circle"
-            style="width: 50px; height: 50px"
-            src="img/1.jpg"
-            alt=""
-            srcset=""
-          />
+              <!-- education -->
+              <a
+                href="education.html"
+                class="text-secondary d-flex align-items-center d-inline-block ms-3 border-bottom pb-2"
+              >
+                <i class="fa fa-book pe-2"></i>
+                <span class="fs-6 fw-bold">Education</span>
+              </a>
 
-          <span class="px-2"> Ali </span>
+              <!-- Courses -->
+              <a
+                href="courses.html"
+                class="text-secondary d-flex align-items-center d-inline-block ms-3 border-bottom pb-2"
+              >
+                <i class="fa fa-paperclip pe-2"></i>
+                <span class="fs-6 fw-bold">Courses</span>
+              </a>
+            </nav>
+          </div>
         </div>
 
-        <form action="" class="mt-3">
-          <div class="mb-3">
-            <label for="info-name-input" class="form-label"
-              >Name</label
-            >
-            <input
-              type="text"
-              class="form-control"
-              id="info-name-input"
-              placeholder="Your name here :)"
-              value="Naif"
-            />
+        <!-- info Section -->
+        <section class="col-lg-8 col-md-8 col-12">
+          <div class="card shadow p-3">
+            <div class="card-header bg-transparent">
+              <h1 class="fs-3 fw-bold text-primary">Info</h1>
+            </div>
+
+            <div class="card-body">
+              <div class="row">
+                <!-- image -->
+                <div class="col-md-3">
+                  <div class="d-flex justify-content-center align-items-center">
+                    <div class="position-relative">
+                      <img
+                        src="../../assets/images/avatar.jpg"
+                        class="user-avatar rounded-circle"
+                        alt=""
+                      />
+
+                      <!-- edit image -->
+                      <button
+                        data-bs-toggle="modal"
+                        data-bs-target="#avatar-edit-model"
+                        class="position-absolute btn bg-primary text-white rounded-circle"
+                        style="bottom: 0; left: 0"
+                      >
+                        <i class="fa fa-pencil-alt"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- form -->
+                <div class="col-12 col-md-8 mt-3 mt-md-0">
+                  <form class="row g-3 needs-validation" novalidate>
+                    <div class="col-6">
+                      <!-- first name -->
+                      <div class="input-group">
+                        <input
+                          type="text"
+                          class="form-control rounded-pill"
+                          placeholder="First Name"
+                          aria-label="fName"
+                          aria-describedby="addon-wrapping"
+                          required
+                          value="Ali"
+                        />
+                      </div>
+                    </div>
+
+                    <!-- last name -->
+                    <div class="col-6">
+                      <div class="input-group">
+                        <input
+                          type="text"
+                          class="form-control rounded-pill"
+                          placeholder="Last Name"
+                          aria-label="lName"
+                          aria-describedby="addon-wrapping"
+                          required
+                          value="Ahmed"
+                        />
+                      </div>
+                    </div>
+
+                    <!-- phone code -->
+                    <div class="col-4">
+                      <div class="input-group">
+                        <select
+                          class="form-select rounded-pill"
+                          aria-label="Default select example"
+                          required
+                        >
+                          <option selected>+05</option>
+                          <option value="1">+01</option>
+                          <option value="2">+103</option>
+                          <option value="3">+966</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <!-- phone number -->
+                    <div class="col-8">
+                      <div class="input-group">
+                        <input
+                          type="text"
+                          class="form-control rounded-pill"
+                          placeholder="Phone Number"
+                          aria-label="phone"
+                          aria-describedby="addon-wrapping"
+                          required
+                          value="123456789"
+                        />
+                      </div>
+                    </div>
+
+                    <!-- email -->
+                    <div class="col-12">
+                      <div class="input-group">
+                        <input
+                          type="email"
+                          class="form-control rounded-pill"
+                          placeholder="Email"
+                          aria-label="email"
+                          aria-describedby="addon-wrapping"
+                          required
+                          value="ali-ahmed.adim@JoJo.com"
+                        />
+                      </div>
+                    </div>
+
+                    <!-- gender -->
+                    <div class="col-6">
+                      <div class="input-group">
+                        <select
+                          class="form-select rounded-pill"
+                          aria-label="Default select example"
+                          required
+                        >
+                          <option disabled>Gender</option>
+                          <option value="1">Female</option>
+                          <option selected value="2">Male</option>
+                          <option value="3">Other</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <!-- date -->
+                    <div class="col-6">
+                      <div class="input-group">
+                        <input
+                          type="date"
+                          class="form-control rounded-pill"
+                          value="2001-06-04"
+                        />
+                      </div>
+                    </div>
+
+                    <!-- save btn -->
+                    <div class="col-12 mt-5">
+                      <button
+                        class="btn bg-primary text-white d-block w-100 rounded-pill"
+                        type="submit"
+                      >
+                        Save
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Edit user avatar image model -->
+    <div
+      class="modal fade"
+      id="avatar-edit-model"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content p-3">
+          <!-- model header -->
+          <div class="modal-header">
+            <h4 class="modal-title fw-bold text-center" id="exampleModalLabel">
+              Edit image profile
+            </h4>
+
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
           </div>
 
-          <div class="mb-3">
-            <label for="info-email-input" class="form-label"
-              >Email address</label
-            >
-            <input
-              type="email"
-              class="form-control"
-              id="info-email-input"
-              placeholder="name@example.com"
-            />
+          <!-- model body -->
+          <div class="modal-body">
+            <form class="g-3">
+              <div class="input-group mb-3">
+                <input type="file" class="form-control" id="inputGroupFile02" />
+              </div>
+            </form>
           </div>
 
-          <div class="mb-3">
-            <label for="info-location-input" class="form-label"
-              >Location</label
-            >
-            <input
-              type="text"
-              class="form-control"
-              id="info-location-input"
-              placeholder="next to your house"
-            />
-          </div>
-
-          <div class="mb-3">
-            <label for="info-phone-number-input" class="form-label"
-              >Phone number</label
-            >
-            <input
-              type="number"
-              class="form-control"
-              id="info-phone-number-input"
-              placeholder="967 777 777 777"
-            />
-          </div>
-
-          <div class="mb-3">
-            <label for="info-post-code-input" class="form-label"
-              >Post Code</label
-            >
-            <input
-              type="number"
-              class="form-control"
-              id="info-post-code-input"
-              placeholder="123456"
-            />
-          </div>
-
-          <div class="">
-            <button type="submit" class="btn btn-primary mb-3 px-5">
-              save
+          <!-- model footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn bg-primary text-white">
+              update
             </button>
           </div>
-        </form>
+        </div>
       </div>
     </div>
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <!------------------- body script ------------------->
+    <script src="../../assets/js/jquery.min.js"></script>
+    <script src="../../assets/js/popper.js"></script>
+    <script src="../../assets/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/script.js"></script>
+    <!------------------- body script ------------------->
   </body>
 </html>
